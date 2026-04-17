@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResumeEdge — Get Hired in 2026's Brutal Job Market</title>
+<meta name="description" content="75% of resumes never reach a human. Our expert writers beat the ATS and get you interviews at Indeed, LinkedIn, and top companies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #08090d;
+  --deep: #0e1017;
+  --card: #14171f;
+  --border: rgba(255,255,255,0.08);
+  --gold: #d4a843;
+  --gold2: #f0c96a;
+  --white: #f2eee6;
+  --muted: #8a8fa3;
+  --danger: #e05252;
+  --green: #3ecf8e;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Outfit', sans-serif; background:var(--black); color:var(--white); overflow-x:hidden; line-height:1.6; }
+body::before { content:''; position:fixed; inset:0; z-index:0; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); }
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:var(--deep); }
+::-webkit-scrollbar-thumb { background:var(--gold); }
+nav { position:fixed; top:0; left:0; right:0; z-index:200; display:flex; align-items:center; justify-content:space-between; padding:1rem 3rem; background:rgba(8,9,13,0.8); backdrop-filter:blur(20px); border-bottom:1px solid var(--border); }
+.logo { font-family:'Cormorant Garamond',serif; font-size:1.55rem; font-weight:700; letter-spacing:0.03em; color:var(--white); text-decoration:none; }
+.logo span { color:var(--gold); font-style:italic; }
+.nav-right { display:flex; align-items:center; gap:2rem; }
+.nav-link { font-size:0.8rem; color:var(--muted); text-decoration:none; letter-spacing:0.06em; text-transform:uppercase; transition:color .2s; }
+.nav-link:hover { color:var(--white); }
+.nav-btn { background:var(--gold); color:var(--black); padding:0.65rem 1.5rem; border-radius:3px; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; transition:all .2s; }
+.nav-btn:hover { background:var(--gold2); transform:translateY(-1px); }
+.alert-bar { margin-top:62px; padding:0.6rem 2rem; text-align:center; font-size:0.78rem; letter-spacing:0.05em; background:linear-gradient(90deg,#1d0f00,#2e1a00,#1d0f00); color:var(--gold2); border-bottom:1px solid rgba(212,168,67,.2); position:relative; z-index:1; }
+.alert-bar strong { color:#fff; }
+.blink-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--danger); margin-right:0.5rem; animation:blink 1.5s infinite; }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:0.3} }
+.hero { min-height:calc(100vh - 100px); display:flex; align-items:center; justify-content:center; padding:4rem 2rem 6rem; position:relative; overflow:hidden; text-align:center; }
+.hero-grid-bg { position:absolute; inset:0; z-index:0; background-image:linear-gradient(rgba(212,168,67,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(212,168,67,.05) 1px,transparent 1px); background-size:55px 55px; mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 30%,transparent 90%); }
+.orb { position:absolute; border-radius:50%; filter:blur(130px); pointer-events:none; z-index:0; }
+.o1 { width:520px; height:520px; background:rgba(212,168,67,.15); top:-10%; left:-10%; animation:drift 15s ease-in-out infinite; }
+.o2 { width:400px; height:400px; background:rgba(224,82,82,.08); bottom:-10%; right:-5%; animation:drift 18s ease-in-out infinite reverse; }
+@keyframes drift { 0%,100%{transform:translate(0,0)}50%{transform:translate(50px,-30px)} }
+.hero-inner { position:relative; z-index:1; max-width:900px; }
+.hero-pill { display:inline-flex; align-items:center; gap:0.6rem; padding:0.5rem 1.2rem; border-radius:30px; background:rgba(224,82,82,.12); border:1px solid rgba(224,82,82,.35); color:#ff8e8e; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; margin-bottom:2rem; animation:fade 0.8s ease both; }
+.hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2.8rem,7vw,5.8rem); font-weight:700; line-height:1.05; margin-bottom:1.5rem; letter-spacing:-0.015em; animation:fade 0.9s ease 0.1s both; }
+.hero h1 em { font-style:italic; color:var(--gold); position:relative; display:inline-block; }
+.hero h1 em::after { content:''; position:absolute; bottom:0.05em; left:0; right:0; height:6px; background:rgba(212,168,67,.25); z-index:-1; }
+.hero-sub { font-size:1.15rem; color:#c8c4b8; max-width:640px; margin:0 auto 2.5rem; line-height:1.75; animation:fade 1s ease 0.2s both; }
+.hero-sub strong { color:var(--white); font-weight:500; }
+@keyframes fade { from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)} }
+.cta-group { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-bottom:3rem; animation:fade 1s ease 0.3s both; }
+.btn-gold { background:var(--gold); color:var(--black); padding:1.1rem 2.4rem; text-decoration:none; font-size:0.9rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; border-radius:3px; display:inline-flex; align-items:center; gap:0.6rem; transition:all .25s; border:none; cursor:pointer; box-shadow:0 8px 30px rgba(212,168,67,.25); }
+.btn-gold:hover { background:var(--gold2); transform:translateY(-2px); box-shadow:0 12px 40px rgba(212,168,67,.45); }
+.btn-ghost { border:1.5px solid rgba(255,255,255,.15); color:var(--white); padding:1.1rem 2.4rem; text-decoration:none; font-size:0.9rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; border-radius:3px; transition:all .2s; }
+.btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
+.trust-row { display:flex; align-items:center; justify-content:center; gap:2rem; font-size:0.82rem; color:var(--muted); flex-wrap:wrap; animation:fade 1s ease 0.4s both; }
+.stars { color:var(--gold); letter-spacing:2px; }
+.crisis { padding:7rem 2rem; background:var(--deep); position:relative; z-index:1; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.crisis-inner { max-width:1100px; margin:0 auto; }
+.sec-eyebrow { text-align:center; color:var(--danger); font-size:0.78rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:500; margin-bottom:1rem; }
+.sec-title { text-align:center; font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4.5vw,3.4rem); font-weight:700; line-height:1.15; margin-bottom:1.2rem; }
+.sec-title em { color:var(--gold); font-style:italic; }
+.sec-desc { text-align:center; color:var(--muted); max-width:620px; margin:0 auto 4rem; font-size:1.02rem; line-height:1.75; }
+.stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.2rem; }
+.stat { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:2.2rem 1.8rem; position:relative; overflow:hidden; transition:all .3s; }
+.stat::before { content:''; position:absolute; top:0; left:0; height:2px; width:0; background:var(--danger); transition:width .4s; }
+.stat:hover { transform:translateY(-3px); border-color:rgba(224,82,82,.3); }
+.stat:hover::before { width:100%; }
+.stat-num { font-family:'Cormorant Garamond',serif; font-size:3.4rem; font-weight:700; line-height:1; color:var(--danger); margin-bottom:0.5rem; }
+.stat-label { font-size:0.95rem; color:var(--white); font-weight:500; margin-bottom:0.4rem; }
+.stat-source { font-size:0.76rem; color:var(--muted); }
+.solution { padding:7rem 2rem; position:relative; z-index:1; }
+.solution-inner { max-width:1100px; margin:0 auto; }
+.sol-eyebrow { text-align:center; color:var(--gold); font-size:0.78rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:500; margin-bottom:1rem; }
+.pillars { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; margin-top:3rem; }
+.pillar { padding:2.2rem; border:1px solid var(--border); border-radius:6px; background:linear-gradient(180deg,var(--card),var(--deep)); transition:all .3s; }
+.pillar:hover { border-color:var(--gold); transform:translateY(-4px); }
+.pillar-icon { width:44px; height:44px; border-radius:50%; background:rgba(212,168,67,.12); border:1px solid rgba(212,168,67,.3); display:flex; align-items:center; justify-content:center; color:var(--gold); font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:700; margin-bottom:1.2rem; }
+.pillar h3 { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:600; margin-bottom:0.7rem; }
+.pillar p { color:var(--muted); font-size:0.92rem; line-height:1.7; }
+.packages { padding:7rem 2rem; background:var(--deep); position:relative; z-index:1; border-top:1px solid var(--border); }
+.pkg-grid { max-width:1100px; margin:3rem auto 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1.5rem; }
+.pkg { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:2.5rem 2rem; position:relative; transition:all .3s; }
+.pkg:hover { transform:translateY(-5px); border-color:rgba(212,168,67,.4); }
+.pkg-popular { border-color:var(--gold); background:linear-gradient(180deg,rgba(212,168,67,.06),var(--card)); transform:scale(1.02); }
+.pkg-popular:hover { transform:scale(1.02) translateY(-5px); }
+.pkg-ribbon { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--black); font-size:0.68rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; padding:0.4rem 1rem; border-radius:30px; white-space:nowrap; }
+.pkg-tier { font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); margin-bottom:0.8rem; }
+.pkg h3 { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:700; margin-bottom:0.5rem; }
+.pkg-desc { color:var(--muted); font-size:0.9rem; margin-bottom:1.8rem; line-height:1.6; }
+.pkg-price { display:flex; align-items:baseline; gap:0.5rem; margin-bottom:1.8rem; padding-bottom:1.5rem; border-bottom:1px solid var(--border); }
+.pkg-price-num { font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:700; color:var(--gold); line-height:1; }
+.pkg-price-suf { color:var(--muted); font-size:0.85rem; }
+.pkg-old { color:var(--muted); text-decoration:line-through; font-size:0.95rem; margin-left:auto; }
+.pkg ul { list-style:none; margin-bottom:2rem; }
+.pkg li { padding:0.55rem 0; font-size:0.88rem; color:#c8c4b8; display:flex; align-items:flex-start; gap:0.7rem; line-height:1.5; }
+.pkg li::before { content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; margin-top:1px; }
+.stripe-btn { width:100%; padding:1.05rem; background:var(--gold); color:var(--black); border:none; border-radius:3px; font-family:'Outfit',sans-serif; font-size:0.9rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; transition:all .2s; display:flex; align-items:center; justify-content:center; gap:0.5rem; text-decoration:none; }
+.stripe-btn:hover { background:var(--gold2); transform:translateY(-1px); box-shadow:0 8px 24px rgba(212,168,67,.3); }
+.stripe-badges { display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-top:0.8rem; font-size:0.72rem; color:var(--muted); }
+.process { padding:7rem 2rem; max-width:1100px; margin:0 auto; position:relative; z-index:1; }
+.steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2rem; margin-top:3rem; }
+.step { text-align:center; padding:1rem; }
+.step-num { font-family:'Cormorant Garamond',serif; font-size:4.5rem; font-weight:700; line-height:1; margin-bottom:1rem; background:linear-gradient(180deg,var(--gold),transparent); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.step h4 { font-size:1.1rem; font-weight:500; margin-bottom:0.5rem; }
+.step p { font-size:0.88rem; color:var(--muted); line-height:1.65; }
+.testimonials { padding:7rem 2rem; background:var(--deep); border-top:1px solid var(--border); border-bottom:1px solid var(--border); position:relative; z-index:1; }
+.testi-grid { max-width:1100px; margin:3rem auto 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1.5rem; }
+.testi { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:2rem; transition:all .3s; }
+.testi:hover { border-color:rgba(212,168,67,.3); transform:translateY(-3px); }
+.testi .stars { font-size:1rem; margin-bottom:1rem; }
+.testi blockquote { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem; line-height:1.65; color:#e8e4da; margin-bottom:1.5rem; }
+.testi-author { display:flex; align-items:center; gap:0.9rem; padding-top:1.2rem; border-top:1px solid var(--border); }
+.avatar { width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,var(--gold),#8a6b20); display:flex; align-items:center; justify-content:center; font-weight:600; font-size:0.9rem; color:var(--black); flex-shrink:0; }
+.testi-name { font-size:0.92rem; font-weight:500; }
+.testi-role { font-size:0.78rem; color:var(--muted); }
+.policy { padding:4rem 2rem; background:var(--black); border-top:1px solid var(--border); position:relative; z-index:1; }
+.policy-inner { max-width:700px; margin:0 auto; text-align:center; }
+.policy-inner h3 { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:700; margin-bottom:1rem; }
+.policy-inner p { color:var(--muted); font-size:0.9rem; line-height:1.8; margin-bottom:0.6rem; }
+.policy-inner strong { color:var(--white); }
+footer { padding:3rem 2rem 2rem; text-align:center; background:var(--black); color:var(--muted); font-size:0.82rem; border-top:1px solid var(--border); position:relative; z-index:1; }
+footer .logo { font-size:1.3rem; display:block; margin-bottom:0.8rem; }
+@media (max-width:768px) {
+  nav { padding:1rem 1.3rem; }
+  .nav-right { gap:1rem; }
+  .nav-link:not(.nav-btn) { display:none; }
+  .hero { padding:3rem 1.3rem 4rem; }
+  .crisis,.solution,.packages,.process,.testimonials,.policy { padding:4.5rem 1.3rem; }
+  .pkg-popular { transform:none; }
+  .pkg-popular:hover { transform:translateY(-5px); }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">Resume<span>Edge</span></a>
+  <div class="nav-right">
+    <a href="#packages" class="nav-link">Packages</a>
+    <a href="#process" class="nav-link">Process</a>
+    <a href="#reviews" class="nav-link">Reviews</a>
+    <a href="#packages" class="nav-btn">Get Started</a>
+  </div>
+</nav>
+
+<div class="alert-bar">
+  <span class="blink-dot"></span>
+  <strong>LIMITED:</strong>&nbsp; First 25 orders this month get 30% off — 7 spots remaining
+</div>
+
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="hero-inner">
+    <div class="hero-pill">⚠ 2026 Job Market Alert</div>
+    <h1>Your resume has <em>6 seconds</em><br>to save your career.</h1>
+    <p class="hero-sub"><strong>75% of resumes never reach human eyes</strong> — they're killed by ATS bots on Indeed, LinkedIn, and ZipRecruiter before a recruiter ever sees them. We write resumes that pass the filters, grab attention, and get interviews. Fast.</p>
+    <div class="cta-group">
+      <a href="#packages" class="btn-gold">See Packages</a>
+      <a href="#process" class="btn-ghost">How It Works</a>
+    </div>
+    <div class="trust-row">
+      <span><span class="stars">★★★★★</span> 4.9/5.0 (500+ clients)</span>
+      <span>✓ 24–72 hour turnaround</span>
+      <span>✓ Revisions included</span>
+    </div>
+  </div>
+</section>
+
+<section class="crisis">
+  <div class="crisis-inner">
+    <div class="sec-eyebrow">⚠ The Hard Truth</div>
+    <h2 class="sec-title">The job market is <em>brutal</em> right now.</h2>
+    <p class="sec-desc">Every open role on Indeed gets 250+ applications. Recruiters don't read them — algorithms do. Here's what you're actually up against:</p>
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-num">75%</div><div class="stat-label">Resumes rejected by ATS bots</div><div class="stat-source">Before a human ever reads them</div></div>
+      <div class="stat"><div class="stat-num">250+</div><div class="stat-label">Applicants per job posting</div><div class="stat-source">Average on Indeed & LinkedIn in 2026</div></div>
+      <div class="stat"><div class="stat-num">6s</div><div class="stat-label">Recruiter glance time</div><div class="stat-source">If you even make it past the bot</div></div>
+      <div class="stat"><div class="stat-num">5mo</div><div class="stat-label">Average job search length</div><div class="stat-source">That's 5 months of lost income</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="solution">
+  <div class="solution-inner">
+    <div class="sol-eyebrow">★ The ResumeEdge Advantage</div>
+    <h2 class="sec-title">We fight the bots. <em>And win.</em></h2>
+    <p class="sec-desc">Every resume we write is engineered to beat the filter, hook the recruiter, and land interviews — not sit in a rejection folder.</p>
+    <div class="pillars">
+      <div class="pillar"><div class="pillar-icon">01</div><h3>ATS-Engineered</h3><p>We reverse-engineer the algorithms used by Indeed, LinkedIn, Workday, and Greenhouse to guarantee your resume passes keyword filters every time.</p></div>
+      <div class="pillar"><div class="pillar-icon">02</div><h3>Recruiter-Tested</h3><p>Formatted for the 6-second glance — critical info above the fold, quantified achievements, and language that makes hiring managers stop scrolling.</p></div>
+      <div class="pillar"><div class="pillar-icon">03</div><h3>Expert-Written</h3><p>Not a template. Not AI slop. A human writer who understands your industry, your career story, and how to sell you to any hiring manager.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="sol-eyebrow">✦ Secure Checkout · Card · Google Pay · Apple Pay</div>
+  <h2 class="sec-title">Choose your <em>package</em>.</h2>
+  <p class="sec-desc">One professionally written resume pays for itself 100x over. Delivered within 24–72 hours.</p>
+  <div class="pkg-grid">
+
+    <div class="pkg">
+      <div class="pkg-tier">Entry Level</div>
+      <h3>Starter</h3>
+      <p class="pkg-desc">Perfect for students, recent grads, or anyone re-entering the workforce applying on Indeed or ZipRecruiter.</p>
+      <div class="pkg-price"><span class="pkg-price-num">$50</span><span class="pkg-price-suf">one-time</span><span class="pkg-old">$89</span></div>
+      <ul>
+        <li>ATS-optimized resume</li>
+        <li>Keyword targeting for your industry</li>
+        <li>Clean, professional formatting</li>
+        <li>1 free revision</li>
+        <li>Delivered within 48–72 hours</li>
+      </ul>
+      <a href="https://buy.stripe.com/9B65kD2Zb9eJ8LhgUUe3e01" target="_blank" class="stripe-btn">🔒 Buy Now — $50</a>
+      <div class="stripe-badges">🃏 Card &nbsp;·&nbsp; 🍎 Apple Pay &nbsp;·&nbsp; G Google Pay</div>
+    </div>
+
+    <div class="pkg pkg-popular">
+      <div class="pkg-ribbon">★ Most Popular</div>
+      <div class="pkg-tier">Professional</div>
+      <h3>Career Boost</h3>
+      <p class="pkg-desc">The package 80% of clients choose. Resume + cover letter + LinkedIn. Best value for serious job seekers.</p>
+      <div class="pkg-price"><span class="pkg-price-num">$99</span><span class="pkg-price-suf">one-time</span><span class="pkg-old">$179</span></div>
+      <ul>
+        <li>Everything in Starter</li>
+        <li>Custom tailored cover letter</li>
+        <li>LinkedIn profile optimization</li>
+        <li>Interview preparation guide</li>
+        <li>2 free revisions</li>
+        <li>Priority delivery within 24–48 hours</li>
+      </ul>
+      <a href="https://buy.stripe.com/28E00jarDcqV8Lh0VWe3e02" target="_blank" class="stripe-btn">🔒 Buy Now — $99</a>
+      <div class="stripe-badges">🃏 Card &nbsp;·&nbsp; 🍎 Apple Pay &nbsp;·&nbsp; G Google Pay</div>
+    </div>
+
+    <div class="pkg">
+      <div class="pkg-tier">Premium</div>
+      <h3>Full Package</h3>
+      <p class="pkg-desc">Complete personal branding for professionals targeting specialist, team lead, or management roles.</p>
+      <div class="pkg-price"><span class="pkg-price-num">$149</span><span class="pkg-price-suf">one-time</span><span class="pkg-old">$249</span></div>
+      <ul>
+        <li>Everything in Career Boost</li>
+        <li>Professional bio & personal brand</li>
+        <li>Follow-up email templates</li>
+        <li>Salary negotiation script</li>
+        <li>Unlimited revisions</li>
+        <li>Rush delivery within 24 hours</li>
+      </ul>
+      <a href="https://buy.stripe.com/cNi4gzeHT76B0eLawwe3e03" target="_blank" class="stripe-btn">🔒 Buy Now — $149</a>
+      <div class="stripe-badges">🃏 Card &nbsp;·&nbsp; 🍎 Apple Pay &nbsp;·&nbsp; G Google Pay</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="sol-eyebrow">How It Works</div>
+  <h2 class="sec-title">From checkout to <em>interview</em> in 4 steps.</h2>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><h4>Pick Your Package</h4><p>Choose the package that fits your situation and pay securely via card, Google Pay, or Apple Pay.</p></div>
+    <div class="step"><div class="step-num">02</div><h4>Submit Your Info</h4><p>After checkout Stripe sends you a confirmation. We'll follow up by email with an intake form for your work history and details.</p></div>
+    <div class="step"><div class="step-num">03</div><h4>We Write & Optimize</h4><p>Our writer builds your resume from scratch, optimizes for ATS, and delivers within 24–72 hours.</p></div>
+    <div class="step"><div class="step-num">04</div><h4>Apply With Confidence</h4><p>Upload to Indeed, LinkedIn, and ZipRecruiter. Start getting callbacks in days — not months.</p></div>
+  </div>
+</section>
+
+<section class="testimonials" id="reviews">
+  <div class="sol-eyebrow">★ Real Clients, Real Results</div>
+  <h2 class="sec-title">People just like you, <em>who got hired.</em></h2>
+  <div class="testi-grid">
+    <div class="testi">
+      <div class="stars">★★★★★</div>
+      <blockquote>"I'd been applying on Indeed for 3 months straight with nothing. After ResumeEdge rewrote my resume I got a callback within 4 days. Just started my new warehouse supervisor job."</blockquote>
+      <div class="testi-author"><div class="avatar">DW</div><div><div class="testi-name">DeShawn W.</div><div class="testi-role">Warehouse Supervisor · Ohio</div></div></div>
+    </div>
+    <div class="testi">
+      <div class="stars">★★★★★</div>
+      <blockquote>"I was switching from retail to office work and had no idea how to make my experience sound relevant. They completely transformed my resume. Got hired as an admin assistant in 2 weeks."</blockquote>
+      <div class="testi-author"><div class="avatar">TM</div><div><div class="testi-name">Tanya M.</div><div class="testi-role">Administrative Assistant · Georgia</div></div></div>
+    </div>
+    <div class="testi">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Thought my resume was fine. Turns out it wasn't even passing the Indeed filters. Career Boost was worth every dollar — landed a customer service team lead role in 10 days."</blockquote>
+      <div class="testi-author"><div class="avatar">RJ</div><div><div class="testi-name">Rosa J.</div><div class="testi-role">Customer Service Lead · Texas</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="policy">
+  <div class="policy-inner">
+    <h3>Our Service Policy</h3>
+    <p>All sales are <strong>final</strong>. Because our writers begin work on your resume immediately after payment, we do not offer refunds under any circumstances.</p>
+    <p>What we <strong>do</strong> offer is revisions. If you feel your resume needs adjustments, we will revise it according to the number of revisions included in your package — <strong>Starter: 1 revision · Career Boost: 2 revisions · Full Package: unlimited revisions.</strong></p>
+    <p>To request a revision, simply reply to your delivery email with your specific change requests and we will turn it around within 24 hours.</p>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="logo">Resume<span>Edge</span></a>
+  <p>© 2026 ResumeEdge · Helping everyday people get hired faster. · All sales final.</p>
+</footer>
+
+</body>
+</html>
